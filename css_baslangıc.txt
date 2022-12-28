@@ -1,0 +1,72 @@
+/*=============== GOOGLE FONTS ===============*/
+
+
+
+
+/*=============== VARIABLES CSS ===============*/
+:root{
+
+}
+
+
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+
+
+
+
+
+/*=============== HEADER & NAV ===============*/
+
+
+
+/* Change background header */
+
+
+
+
+
+/*=============== HOME ===============*/
+
+
+
+
+/*=============== BUTTON ===============*/
+
+
+
+
+/*=============== LOGOS ===============*/
+
+
+
+/*=============== BREAKPOINTS ===============*/
+
+
+/* For small devices */
+@media screen and () {
+
+    
+  }
+
+
+/* For medium devices */
+
+@media screen and () {
+  
+  }
+  
+
+
+/* For large devices */
+
+@media screen and () {
+  
+}
+
+
+/* For 2K & 4K resolutions */
+
+@media screen and () {
+  
+}

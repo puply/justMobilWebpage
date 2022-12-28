@@ -1,0 +1,496 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+
+  --colorSub: rgb(155, 153, 155);
+  --colorSpan: rgb(154, 210, 12);
+
+}
+
+body {
+  background: #00001f;
+}
+
+.grid {
+  display: grid;
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+
+}
+
+span {
+  color: white;
+}
+
+
+.sub_title{
+  color: white;
+  opacity: .5;
+}
+
+button {
+  color: rgb(255, 255, 255);
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  border: 1px solid white;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+button:hover {
+  transition: .6s;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
+  background-color: white;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.logo {
+  color: rgb(253, 253, 253);
+}
+
+
+/*=============== HEADER & NAV ===============*/
+@media screen and (max-width:1023px){
+
+
+
+.nav-toggle {
+  display: inline-flex;
+  color: white;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.container {
+  margin-inline: 1rem;
+}
+
+.nav {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-menu {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: -100%;
+  transition: top .6s;
+  overflow: hidden;
+  background-color: rgb(40, 32, 43);
+  border-radius: 0 0 0.5rem 0.5rem;
+  z-index: 2;
+}
+
+.nav-menu .nav-list-item .nav-link {
+  color: rgb(244, 244, 244);
+  font-weight: 700;
+}
+
+.nav-close {
+  font-size: 2rem;
+  color: aliceblue;
+}
+
+.logo {
+  font-size: 1.3rem;
+}
+
+.nav-list {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  row-gap: 1rem;
+  margin: 1rem auto 1rem
+}
+
+.nav-list-item {
+  padding: .2rem;
+}
+
+.nav-link {
+  transition: color .4s;
+}
+
+.nav-list-item .nav-link:hover {
+  color: var(--colorSub);
+}
+
+.nav-close {
+  position: absolute;
+  cursor: pointer;
+  top: 1rem;
+  right: 1rem;
+}
+
+.show-menu {
+  top: 0;
+}
+
+
+
+/*SECTION*/
+
+.main {
+  margin-top: 2rem;
+  row-gap: 2rem;
+}
+
+
+.sectionGrid {
+  row-gap: 2rem;
+}
+
+.wave {
+  display: flex;
+  align-items: center;
+
+}
+
+.wave .bxs-hand {
+  margin-right: 1rem;
+  font-size: 1.9rem;
+  color: rgb(163, 163, 0);
+}
+
+.colorSpan {
+  color: var(--colorSpan);
+}
+
+.waveBody {
+  font-size: 2rem;
+}
+
+.waveFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.waveFooter .bx-right-arrow-alt {
+  font-size: 1.5rem;
+}
+
+.waveFooter p {
+  color: bisque;
+  opacity: 0.3;
+}
+
+.arrowBtn {
+  background: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  outline: 0;
+}
+
+.buttons {
+  margin-top: 2rem;
+  grid-template-columns: repeat(3, auto);
+  align-items: center;
+  column-gap: 0.5rem;
+  row-gap: 1rem;
+}
+
+
+button {
+  color: rgb(255, 255, 255);
+  border-radius: 25px;
+  border: 1px solid white;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+
+
+.popular__title {
+  color: white;
+  text-align: center;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+
+.live__title {
+  color: white;
+  text-align: center;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.headLive{
+  display: flex;
+  align-items: center;
+}
+
+.liveRec{
+ margin-left: 5px;
+  color: red;
+  font-size: 1rem;
+}
+
+
+.tableLive {
+  color: white;
+  margin-bottom: 1rem;
+  border: 1px solid rgb(40, 25, 25);
+  padding: .5rem;
+  border-radius: .5rem;
+  cursor: pointer;
+}
+
+.tableLive:hover{
+  box-shadow: rgba(226, 38, 38, 0.35) 0px 5px 15px; 
+  transition: .2s;
+}
+
+.streamer img{
+  width: 60px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.acıklama{
+  display: flex;
+  margin-top: 1rem;
+  align-items: center;
+}
+
+.streamFooter{
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.more{
+  width: 40%;
+}
+
+
+
+.pTable{
+  border: 1px solid #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: rgba(226, 38, 38, 0.35);
+}
+
+.pHead span{
+  font-size: 2rem;
+}
+
+.prize_title {
+  color: white;
+  text-align: center;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.pBody{
+  margin: 1rem auto;
+}
+
+
+footer{
+  color: white;
+}
+
+.prize .container{
+  row-gap: 1rem;
+}
+
+.footer__container{
+  row-gap: 2.5rem;
+  justify-content: center;
+}
+.footer__logo{
+  display: inline-flex;
+  align-items: center;
+  column-gap: .25rem;
+  margin-bottom: .75rem;
+}
+
+.footer__logo i{
+  font-size: 1.25rem;
+}
+
+.footer__content,
+.footer__links{
+  display: grid;
+}
+
+.footer__content{
+  grid-template-columns: repeat(2,max-content);
+  gap: 2.5rem 4rem;
+}
+
+.footer__title{
+  margin-bottom: 1rem;
+}
+
+.footer__links{
+  row-gap: .5rem;
+}
+
+.footer__link{
+  color: var(--text-color);
+  transition: .3s;
+}
+
+.footer__social{
+  display: flex;
+  column-gap: 1rem;
+}
+
+.footer__social-link{
+  font-size: 1.25rem;
+  color: var(--text-color);
+  transition: .3s;
+}
+
+
+.footer__info,
+.footer__privacy{
+  display: flex;
+}
+
+.footer__info{
+  padding-bottom: 6rem;
+  margin-top: 5.5rem ;
+  flex-direction: column;
+  text-align: center;
+  row-gap: 1.5rem;
+}
+
+.footer__copy,
+.footer__privacy a{
+  color: var(--text-color);
+}
+
+.footer__privacy{
+  justify-content: center;
+  column-gap: 1.25rem;
+}
+}
+
+/* Change background header */
+
+
+
+
+
+/*=============== HOME ===============*/
+
+
+
+/*=============== BUTTON ===============*/
+
+
+
+
+
+
+
+/*=============== LOGOS ===============*/
+
+
+
+/*=============== BREAKPOINTS ===============*/
+
+
+/* For small devices */
+@media screen and (max-width:320px) {
+
+  .container{
+    margin: 1rem;
+  }
+  .buttons{
+    grid-template-columns: repeat(2,auto);
+  }
+
+}
+
+
+
+@media screen and (min-width:600px) {
+
+  .buttons{
+    grid-template-columns: repeat(4,auto);
+  }
+
+}
+
+
+/* For medium devices */
+
+@media screen and (min-width:767px){
+  
+
+
+}
+
+
+
+/* For large devices */
+
+@media screen and (max-width:1023px){
+  
+
+
+}
+
+
+@media screen and (min-width:1040px) {
+  
+
+}
+
+
+/* For 2K & 4K resolutions */
+
+
+
+
+
+
+
+
+
+
+/*swiper*/
